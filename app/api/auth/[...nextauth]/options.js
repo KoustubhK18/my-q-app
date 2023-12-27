@@ -1,4 +1,5 @@
 import GoogleProvider from 'next-auth/providers/google'
+import CredentialsProvider from 'next-auth/providers/credentials';
 
 export const options = {
     providers: [
@@ -13,6 +14,26 @@ export const options = {
             },
             clientId: process.env.GOOGLE_ID,
             clientSecret: process.env.GOOGLE_SECRET
+        }),
+        CredentialsProvider({
+            name:'Credentials',
+            credentials:{
+                email:{
+                    label:'Email',
+                    type:'email'
+                },
+                password:{
+                    label:'Password',
+                    type:'password'
+                }
+            },
+            async authorize(credentials){
+                try {
+                    console.log("Credentials : ",credentials);
+                } catch (error) {
+                    console.error("Credential error : ",error);
+                }
+            }
         })
     ],
     callbacks: {

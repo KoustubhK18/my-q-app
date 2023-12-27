@@ -14,7 +14,7 @@ console.log("Navbar session : ",session);
                 <div className='flex gap-10 justify-end '>
                     <Link href='/Dashboard'>Dashboard</Link>
                     <Link href='/Member'>Member</Link>
-                    <Link href='/Profile'>Profile</Link>
+                    <Link href='/Profile/MyProfile'>Profile</Link>
                     {
                     session ? (
                             <Link href="/api/auth/signout?callbackUrl=/" >Logout</Link>
