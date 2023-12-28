@@ -8,9 +8,10 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  let theme = "light";
   return (
     <html lang="en">
-      <body>
+      <body data-theme={theme}>
         <NavBar />
         <div>
           {children}

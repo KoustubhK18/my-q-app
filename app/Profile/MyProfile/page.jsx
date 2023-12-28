@@ -1,7 +1,6 @@
 import React from 'react'
 import { getServerSession } from "next-auth";
-import { options } from '@/app/api/auth/[...nextauth]/options'
-import Image from 'next/image';
+import { options } from '@/app/api/auth/[...nextauth]/options';
 
 const MyProfile = async () => {
   const session = await getServerSession(options);
@@ -14,7 +13,6 @@ const MyProfile = async () => {
           <span className='text-blue-600 text-3xl col-span-9 mt-6'>{session?.user?.name}
           </span>
         </div>}
-        
       </div>
     </div>
   )
