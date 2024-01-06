@@ -10,8 +10,6 @@ const Dashboard = () => {
     <div className='min-h-screen'>
       <div className='flex flex-col items-center'>
         <input type="text" placeholder="Search here" className="input input-bordered input-primary max-w-xs w-full md:max-w-2xl" />
-        <button className='btn btn-circle btn-ghost p-2'>
-        </button>
       </div>
 
       {false && (<div className='flex flex-col items-center'>

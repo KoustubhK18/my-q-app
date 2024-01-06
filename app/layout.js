@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   let theme = "light";
   return (
     <html lang="en">
-      <body data-theme={theme}>
+      <body data-theme="light">
         <NavBar />
         <div>
           {children}

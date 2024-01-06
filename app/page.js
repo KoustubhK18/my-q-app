@@ -14,8 +14,6 @@ useEffect(() => {
   return (
     <main  className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>Hello NextJS</div>
-      <Countdown data={{min: 3, sec:0}}/>
-      <Countdown />
     </main>
   )
 }
